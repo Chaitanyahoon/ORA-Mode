@@ -39,14 +39,30 @@
                 <Border.Effect>
                     <DropShadowEffect Color="#80000000" BlurRadius="10" ShadowDepth="4"/>
                 </Border.Effect>
-                <TextBlock Name="QuoteText" 
-                           Text="“Yare Yare Daze...”" 
-                           TextWrapping="Wrap" 
-                           Foreground="#E0B0FF" 
-                           FontFamily="Segoe UI Semibold"
-                           FontSize="15" 
-                           FontStyle="Italic"
-                           TextAlignment="Center"/>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    
+                    <TextBlock Name="QuoteText" 
+                               Grid.Column="0"
+                               Text="“Yare Yare Daze...”" 
+                               TextWrapping="Wrap" 
+                               Foreground="#E0B0FF" 
+                               FontFamily="Segoe UI Semibold"
+                               FontSize="15" 
+                               FontStyle="Italic"
+                               VerticalAlignment="Center"
+                               TextAlignment="Left"
+                               Margin="0,0,10,0"/>
+
+                    <Image Name="ChibiImage" 
+                           Grid.Column="1"
+                           Source="/BizarreStand;component/Resources/ChibiHero.png"
+                           Height="64" Width="64"
+                           RenderOptions.BitmapScalingMode="HighQuality"/>
+                </Grid>
             </Border>
 
             <!-- Action Button -->

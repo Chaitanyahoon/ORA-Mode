@@ -41,6 +41,12 @@ namespace BizarreStand.ToolWindow
         {
             int index = _random.Next(_quotes.Count);
             QuoteText.Text = _quotes[index];
+            
+            // Randomly switch Chibi
+            bool useHero = _random.Next(2) == 0;
+            string imageName = useHero ? "ChibiHero.png" : "ChibiVillain.png";
+            var uri = new Uri($"pack://application:,,,/BizarreStand;component/Resources/{imageName}");
+            ChibiImage.Source = new System.Windows.Media.Imaging.BitmapImage(uri);
         }
     }
 }

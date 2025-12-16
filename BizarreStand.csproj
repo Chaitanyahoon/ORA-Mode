@@ -30,7 +30,15 @@
     <Content Include="Themes\GoldenStand.vstheme">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-     <Content Include="Resources\StandAura.png">
+    <Content Include="Resources\StandAura.png">
+      <IncludeInVSIX>true</IncludeInVSIX>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\ChibiHero.png">
+      <IncludeInVSIX>true</IncludeInVSIX>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\ChibiVillain.png">
       <IncludeInVSIX>true</IncludeInVSIX>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
