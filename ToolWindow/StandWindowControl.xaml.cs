@@ -47,6 +47,12 @@ namespace BizarreStand.ToolWindow
             string imageName = useHero ? "ChibiHero.png" : "ChibiVillain.png";
             var uri = new Uri($"pack://application:,,,/BizarreStand;component/Resources/{imageName}");
             ChibiImage.Source = new System.Windows.Media.Imaging.BitmapImage(uri);
+
+            // Play Sound if Enabled
+            if (SoundToggle.IsChecked == true)
+            {
+                System.Media.SystemSounds.Exclamation.Play();
+            }
         }
     }
 }

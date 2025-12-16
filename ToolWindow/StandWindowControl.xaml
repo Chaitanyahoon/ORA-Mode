@@ -29,6 +29,9 @@
             <!-- Opacity Control -->
             <DockPanel LastChildFill="True" Margin="0,0,0,10">
                 <TextBlock Text="SPIRIT:" Foreground="#D4AF37" FontWeight="Bold" DockPanel.Dock="Left" VerticalAlignment="Center" Margin="0,0,10,0"/>
+                <CheckBox Name="SoundToggle" Content="🔊" Foreground="#D4AF37"  
+                          IsChecked="True" VerticalAlignment="Center" DockPanel.Dock="Right" Margin="10,0,0,0"
+                          ToolTip="Enable Stand Sounds"/>
                 <Slider Name="OpacitySlider" Minimum="0.1" Maximum="1.0" Value="0.4" 
                         TickFrequency="0.1" IsSnapToTickEnabled="True" 
                         Foreground="#D4AF37"/>
