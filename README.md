@@ -36,3 +36,4 @@ MIT
 ## Credits
 - **Concept**: JoJo's Bizarre Adventure
 - **Co-Author**: The Speedwagon Foundation (and GitHub Bot)
+- **Special Thanks**: Octocat (GitHub)
