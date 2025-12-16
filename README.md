@@ -18,6 +18,12 @@ A dockable tool window (View > Other Windows > Summon Stand Window) that provide
 - A customizable **Stand Aura** background (adjust opacity to blend with your IDE).
 - **Motivation Quotes** from the JoJo universe to keep your resolve high during debugging.
 
+### 🖼️ Visual Preview
+| ORA Mode Hero | ORA Mode Villain |
+|:---:|:---:|
+| <img src="Resources/ChibiHero.png" width="150"/> | <img src="Resources/ChibiVillain.png" width="150"/> |
+| *Your coding companion* | *For those bug-hunting nights* |
+
 ## Installation
 
 1. Clone this repository.
