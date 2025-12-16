@@ -1,0 +1,34 @@
+<Themes xmlns="http://schemas.microsoft.com/VisualStudio/2010/05/vsthm">
+  <Theme Name="ORA Mode (Golden Spirit)" GUID="{5C3C3D76-9280-4228-B089-6F127DB28C21}">
+    <Category GUID="{58E96763-1D3B-4E05-B6BA-FF7129ED290D}" Name="Environment">
+      <Color Name="Background">
+        <Background Type="CT_RAW" Source="FF1A0B2E" />
+      </Color>
+      <Color Name="WindowText">
+        <Background Type="CT_RAW" Source="FFD4AF37" />
+      </Color>
+      <Color Name="Control">
+        <Background Type="CT_RAW" Source="FF2D1B4E" />
+      </Color>
+      <Color Name="ControlText">
+        <Background Type="CT_RAW" Source="FFE0B0FF" />
+      </Color>
+    </Category>
+    <!-- Basic Editor Colors (Simplified) -->
+    <Category GUID="{75A05685-00A8-4DED-BAE5-E7A50BFA929A}" Name="Text Editor">
+       <Color Name="Plain Text">
+        <Foreground Type="CT_RAW" Source="FFE0B0FF" />
+        <Background Type="CT_RAW" Source="FF1A0B2E" />
+      </Color>
+      <Color Name="Keyword">
+        <Foreground Type="CT_RAW" Source="FFD4AF37" /> 
+      </Color>
+      <Color Name="String">
+        <Foreground Type="CT_RAW" Source="FF00CED1" />
+      </Color>
+      <Color Name="Comment">
+        <Foreground Type="CT_RAW" Source="FFA9A9A9" />
+      </Color>
+    </Category>
+  </Theme>
+</Themes>

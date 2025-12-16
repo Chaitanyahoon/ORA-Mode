@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <Extern href="stdidcmd.h"/>
+  <Extern href="vsshlids.h"/>
+
+  <Commands package="guidBizarreStandPackage">
+    <Groups>
+      <Group guid="guidBizarreStandPackageCmdSet" id="MyMenuGroup" priority="0x0600">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS"/>
+      </Group>
+    </Groups>
+
+    <Buttons>
+      <Button guid="guidBizarreStandPackageCmdSet" id="ShowStandWindowCommandId" priority="0x0100" type="Button">
+        <Parent guid="guidBizarreStandPackageCmdSet" id="MyMenuGroup" />
+        <Icon guid="guidImages" id="bmpPic1" />
+        <Strings>
+          <ButtonText>Summon Stand Window</ButtonText>
+        </Strings>
+      </Button>
+    </Buttons>
+
+    <Bitmaps>
+      <Bitmap guid="guidImages" href="Resources\StandAura.png" usedList="bmpPic1"/>
+    </Bitmaps>
+  </Commands>
+
+  <Symbols>
+    <GuidSymbol name="guidBizarreStandPackage" value="{05f88461-9c17-4581-9870-7685655767a1}" />
+
+    <GuidSymbol name="guidBizarreStandPackageCmdSet" value="{0647b08d-8c17-48f5-961d-727546654761}">
+      <IDSymbol name="MyMenuGroup" value="0x1020" />
+      <IDSymbol name="ShowStandWindowCommandId" value="0x0100" />
+    </GuidSymbol>
+
+    <GuidSymbol name="guidImages" value="{aa3f886f-22fb-429d-bd88-111116666111}" >
+      <IDSymbol name="bmpPic1" value="1" />
+    </GuidSymbol>
+  </Symbols>
+</CommandTable>

@@ -1,0 +1,69 @@
+<UserControl x:Class="BizarreStand.ToolWindow.StandWindowControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             Background="#1a0b2e"
+             mc:Ignorable="d"
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <!-- Overlay Gradient for Readability -->
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                <GradientStop Color="#00000000" Offset="0.0"/>
+                <GradientStop Color="#CC120A20" Offset="0.8"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <!-- Background Aura -->
+        <Image Name="BackgroundImage" Source="/BizarreStand;component/Resources/StandAura.png" 
+               Stretch="UniformToFill" 
+               Opacity="{Binding ElementName=OpacitySlider, Path=Value}"
+               IsHitTestVisible="False">
+            <Image.Effect>
+                <BlurEffect Radius="2"/>
+            </Image.Effect>
+        </Image>
+
+        <StackPanel VerticalAlignment="Bottom" Margin="15,10,15,20">
+            <!-- Opacity Control -->
+            <DockPanel LastChildFill="True" Margin="0,0,0,10">
+                <TextBlock Text="SPIRIT:" Foreground="#D4AF37" FontWeight="Bold" DockPanel.Dock="Left" VerticalAlignment="Center" Margin="0,0,10,0"/>
+                <Slider Name="OpacitySlider" Minimum="0.1" Maximum="1.0" Value="0.4" 
+                        TickFrequency="0.1" IsSnapToTickEnabled="True" 
+                        Foreground="#D4AF37"/>
+            </DockPanel>
+
+            <!-- Quote Container -->
+            <Border BorderBrush="#D4AF37" BorderThickness="2" Background="#DD1A0B2E" CornerRadius="8" Padding="15" Margin="0,0,0,15">
+                <Border.Effect>
+                    <DropShadowEffect Color="#80000000" BlurRadius="10" ShadowDepth="4"/>
+                </Border.Effect>
+                <TextBlock Name="QuoteText" 
+                           Text="“Yare Yare Daze...”" 
+                           TextWrapping="Wrap" 
+                           Foreground="#E0B0FF" 
+                           FontFamily="Segoe UI Semibold"
+                           FontSize="15" 
+                           FontStyle="Italic"
+                           TextAlignment="Center"/>
+            </Border>
+
+            <!-- Action Button -->
+            <!-- Action Button -->
+            <Button Click="OnRefreshQuote" 
+                    Background="#4B0082" Foreground="#FFD700"
+                    BorderBrush="#FFD700" BorderThickness="1"
+                    FontWeight="Bold" Padding="10,8" Cursor="Hand">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="4"/>
+                    </Style>
+                </Button.Resources>
+                <Button.Content>
+                    SUMMON RESOLVE
+                </Button.Content>
+            </Button>
+        </StackPanel>
+    </Grid>
+</UserControl>
