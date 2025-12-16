@@ -32,3 +32,7 @@ A dockable tool window (View > Other Windows > Summon Stand Window) that provide
 
 ## License
 MIT
+
+## Credits
+- **Concept**: JoJo's Bizarre Adventure
+- **Co-Author**: The Speedwagon Foundation (and GitHub Bot)
