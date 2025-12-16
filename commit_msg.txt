@@ -1,0 +1,5 @@
+Docs: Update credits with strict formatting
+
+This commit aims to trigger the badge by ensuring the Co-authored-by trailer is separated by an empty line.
+
+Co-authored-by: octocat <octocat@github.com>
